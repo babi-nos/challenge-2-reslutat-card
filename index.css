@@ -95,25 +95,18 @@ body{
     margin-right: 10%;
     display: flex;
     border-radius: 10px;
-    /* border-top-left-radius : 100px 10px; */
     position: relative;
     font-size: 14px;
     font-weight: 500;
-    background: #00000033;
-    border: 2px solid black;
-    border-radius: 7px;
-    /* background: hsl(0, 100%, 67%) ; */
-    
+    background: #00000013;
+    z-index: 2;
+    border-radius: 8px;
 }
 
 .type1{
-    /* background: hsla(123, 94%, 48%, 0.997) ; */
-
-    /* background: #000000; */
-    z-index: 2;
-    /* background: hsl(0, 100%, 67%) ; */
+    position: absolute;
+    z-index: -1;
     color: rgb(255, 87, 87);
-
 }
 .summary .tab-sum .type1::before{
     content: "";
@@ -123,23 +116,98 @@ body{
     left: 0;
     width: 100%;
     height: 40px;
-    z-index: -1;
+    z-index: -2;
+    border-radius: 10px;
+}
+.summary .tab-sum .type1::after{
+    content: "";
+    position: absolute;
+    background: hsla(0, 100%, 67%, 0.05) ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: -2;
     border-radius: 8px;
 }
 .summary .tab-sum .type svg{
     padding-right: 10px;
 }
 .type2{
-    background-color: hsla(39, 100%, 56%, 0.04);
     color: hsla(39, 100%, 56%);
 }
+.summary .tab-sum .type2::before{
+    content: "";
+    position: absolute;
+    background: hsla(0, 0%, 100%, 0.997) ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: -2;
+    border-radius: 10px;
+}
+.summary .tab-sum .type2::after{
+    content: "";
+    position: absolute;
+    background-color: hsla(39, 100%, 56%, 0.05);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: -2;
+    border-radius: 8px;
+}
 .type3{
-    background-color: hsla(166, 100%, 37%, 0.04);
     color: rgb(0, 189, 145);
 }
+.summary .tab-sum .type3::before{
+    content: "";
+    position: absolute;
+    background: hsla(0, 0%, 100%, 0.997) ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: -2;
+    border-radius: 10px;
+}
+.summary .tab-sum .type3::after{
+    content: "";
+    position: absolute;
+    background-color: hsla(166, 100%, 37%, 0.05);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: -2;
+    border-radius: 8px;
+}
 .type4{
-    background-color: hsla(234, 85%, 45%, 0.04);
     color: rgb(17, 36, 212);
+}
+.summary .tab-sum .type4::before{
+    content: "";
+    position: absolute;
+    background: hsla(0, 0%, 100%, 0.997) ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: -2;
+    border-radius: 10px;
+}
+.summary .tab-sum .type4::after{
+    content: "";
+    position: absolute;
+    /* background-color: hsla(166, 100%, 37%, 0.04); */
+    background-color: hsla(234, 85%, 45%, 0.05);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: -2;
+    border-radius: 8px;
 }
 .summary .tab-sum .type .number{
     position: absolute;
@@ -161,6 +229,10 @@ body{
     margin-right: 10%;
     border-radius: 25px;
     font-size: 14px;
+}
+.summary a:hover{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
 }
 
 
